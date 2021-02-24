@@ -1,0 +1,1 @@
+So, I was bored, and was coding at school, and I was out of ideas. So, I asked my teacher what I should code, and he told me I could make a program to manage the school vending machines. This is currently a WIP.
