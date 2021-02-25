@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 15px;
+    }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body class="text-center">
+    <h2>Editing {{tuples[1]}}</h2>
+
+    <form method="POST" action="/snackpost">
+      <input type="hidden" name="id" value="{{tuples[0]}}">
+      <span>Item</span><br>
+      <input type="text" name="item" value="{{tuples[1]}}"><br>
+      <span>Slot</span><br>
+      <input type="text" name="slot" value="{{tuples[2]}}"><br>
+      <span>Amount in machine</span><br>
+      <input type="number" name="stock" value="{{tuples[3]}}"><br>
+      <span>Extra amount</span><br>
+      <input type="number" name="extra" value="{{tuples[4]}}"><br>
+      <span>Store price</span><br>
+      <input type="number" name="store" value="{{tuples[5]}}"><br>
+      <span>Machine price</span><br>
+      <input type="number" name="price" value="{{tuples[6]}}"><br>
+      <input type="submit" class="btn btn-outline-primary" value="Edit">
+    </form>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
