@@ -81,7 +81,7 @@ def editpost():
 
   c = conn.cursor()
 
-  c.execute(f"UPDATE drinks SET item = '{item}', slot = '{slot}', stock = {stock}, extra = {extra}, store = {store}, price = {price} WHERE id = {ida}")
+  c.execute(f"UPDATE drinks SET item = \"{item}\", slot = \"{slot}\", stock = {stock}, extra = {extra}, store = {store}, price = {price} WHERE id = {ida}")
 
   conn.commit()
 
@@ -133,7 +133,7 @@ def snackpost():
 
   c = conn.cursor()
 
-  c.execute(f"UPDATE snacks SET item = '{item}', slot = '{slot}', stock = {stock}, extra = {extra}, store = {store}, price = {price} WHERE id = {ida}")
+  c.execute(f"UPDATE snacks SET item = \"{item}\", slot = \"{slot}\", stock = {stock}, extra = {extra}, store = {store}, price = {price} WHERE id = {ida}")
 
   conn.commit()
 
